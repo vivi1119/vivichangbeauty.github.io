@@ -18,8 +18,8 @@
  		left:18px;
 	}    	
 	
-	.j{
-		width: 100%;
+	.jumbotron{
+		background-image:url('../images/zebra.jpg')   ;
 		height:350px;
 	}
 	.display-4{
@@ -65,7 +65,7 @@
 
     .section{
     position: absolute;
-	top: 60.8%;
+	top: 68.5%;
 	left: 27%;	
 	width:1108px;
 	height: 2200px;
@@ -126,6 +126,7 @@
 		font-family:Courier New;
 		padding-left: 52px;
 		padding-top: 35px;
+		font-weight: bolder;
 		
 	}
 	.time{
@@ -133,6 +134,10 @@
 		padding-top: 20px;
 		
 		
+	}
+
+	.me{
+		text-align: center;
 	}
 	.inside{		
 		color: #5A5C4F;
@@ -289,3 +294,65 @@
   color: white;
   clear: both;
    }
+
+      @keyframes scaleDraw {  /*定义关键帧、scaleDrew是需要绑定到选择器的关键帧名称*/
+            0%{
+                transform: scale(1);  /*开始为原始大小*/
+            }
+            25%{
+                transform: scale(1.1); /*放大1.1倍*/
+            }
+            50%{
+                transform: scale(1);
+            }
+            75%{
+                transform: scale(1.1);
+            }
+        }
+    .ballon{
+			position: absolute;
+			top: 40px;
+			left: 660px;
+            background: url("images/love.png");
+            background-size: 70px 70px;
+            -webkit-animation-name: scaleDraw; /*关键帧名称*/
+            -webkit-animation-timing-function: ease-in-out; /*动画的速度曲线*/
+            -webkit-animation-iteration-count: infinite;  /*动画播放的次数*/
+            -webkit-animation-duration: 3s; /*动画所花费的时间*/
+        }
+        .l1{
+        	position: absolute;
+			top: 40px;
+			left: 675px;
+        }
+        
+        .l2{
+        	position: absolute;
+			top:395px;
+			left: 555px;
+        }
+
+        .l3{
+        	position: absolute;
+			top:685px;
+			left:395px;
+        }
+
+        .l4{
+        	position: absolute;
+			top:1040px;
+			left:700px;
+        }
+
+        .l5{
+        	position: absolute;
+			top:1260px;
+			left:535px;
+        }
+
+        .star{
+        	position: absolute;
+			top:840px;
+			left: 165px;
+        }
+
